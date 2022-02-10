@@ -1,5 +1,8 @@
 # https://youtu.be/n9uCgUzfeRQ?t=5340
 
+choco install make
+
+
 
 ## CREATE IMAGES
 docker build .
@@ -26,7 +29,14 @@ docker run "#IMAGEID || name":#tag <!-- запуск контейнера с у�
 
 .exit <!-- выход из интерактивной консооли -->
 
-
+## VOLUMES
+docker volume ls <!-- список созданных volumes  -->
+docker volume rm #name <!-- удалить volume по названию  -->
+docker volume prune <!-- удалить все не используемые volume  -->
+docker run -v #name:/app/data <!-- создать именованный -->
+docker run -v /app/data <!-- создать анонимный -->
+docker volume create #name <!-- -->
+docker volume inspect #name
 
 
 

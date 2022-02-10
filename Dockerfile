@@ -20,4 +20,6 @@ ENV PORT=3000
 # Порт при запуске приложения
 EXPOSE $PORT
 
+VOLUME [ "/app/data" ]
+
 CMD [ "node", "app.js" ]
